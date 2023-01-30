@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Heroes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Heroes</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-3"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-white">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <h1>Indonesian Heroes</h1>
+            
+        </div>
+    </div>
+    <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+            <p class="paragraf">
+                Welcome to my website, this website provides data from Indonesian heroes. 
+                You can search for hero data on the search menu.
+            </p>
+        </div>
+    
+        <div class="add_flex">
+            <div class="form-group searchInput">
+                <label for="email">Search:</label>
+                <input type="search" class="form-control" id="filterbox" placeholder=" ">
+            </div>
+        </div>
+        <div class="overflow-x">
+            <table style="width:100%;" id="filtertable" class="table cust-datatable dataTable no-footer">
+                <thead>
+                    <tr>
+                        <th style="min-width:50px;">Name</th>
+                        <th style="min-width:100px;">Birth Year</th>
+                        <th style="min-width:100px;">Dead Year</th>
+                        <th style="min-width:150px;">Description</th>
+                        <th style="min-width:100px;">Ascension Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- <script>
+        fetch('https://indonesia-public-static-api.vercel.app/api/heroes')
+            .then(res=>res.json())
+            .then(data=>{
+                console.log('data',data);
+
+                displayProducts(data);
+            })
+
+        async function displayProducts(products) {
+            let html = '';
+            await products.forEach((product, index, array) => {
+                html += '<tr>';
+                html += `<td>${product.name}</td>
+                        <td>${product.birth_year}</td>
+                        <td>${product.death_year}</td>
+                        <td>${product.description}$</td>
+                        <td>${product.ascension_year}</td>`;
+                html += '</tr>';
+            })
+            document.querySelector('tbody').innerHTML = await html;
+            // 
+            $(document).ready(function () {
+                var dataTable = $('#filtertable').DataTable({
+                    "bPaginate": false,
+                    'sDom': '"top"i',
+                    "bInfo": false
+                });
+
+                $('#filterbox').on('keyup', function() {
+                    dataTable.search(this.value).draw();
+                });
+            });
+        }
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: #23242a;
+}
+tr {
+    color: #fff;
+}
+.banner-image {
+    background-image: url('../img/banner-img.png');
+    background-size: cover;
+}
+h1{
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    font-size: 5em;
+    margin:50px;
+    text-align: center;
+}
+.paragraf {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+.searchInput {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px 4px;
+}
+.searchInput input {
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    margin-left: 8px;
+    height: 34px;
+    width: 100%;
+    padding: 0px 25px 0px 10px;
+    transition: all .6s ease;
+}
+.searchInput label {
+    color: #fff;
+    font-weight: normal;
+}
+.searchInput input:placeholder-shown {
+    width: 13%;
+}
+.searchInput:hover input:placeholder-shown {
+    width: 100%;
+    cursor: pointer;
+}
+.searchInput:after {
+    font-family: 'FontAwesome';
+    color: #d4d4d4;
+    position: relative;
+    content: "\f002";
+    right: 25px;
+}
+.add_flex{
+    display: flex;
+    justify-content: flex-end;
+    padding-right:0px;
+}
+@media only screen and (max-width:1200px){
+    .overflow-x{
+        overflow-x:scroll;
+    }
+    .overflow-x::-webkit-scrollbar{
+        width:5px;
+        height:6px;
+    }
+    .overflow-x::-webkit-scrollbar-thumb{
+        background-color: #888;
+    }
+    .overflow-x::-webkit-scrollbar-track{
+         background-color: #f1f1f1;
+    }
+}
+.about-text h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  @media (max-width: 767px) {
+    .about-text h3 {
+      font-size: 35px;
+    }
+  }
+  .about-text h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 767px) {
+    .about-text h4 {
+      font-size: 18px;
+    }
+  }
+  .about-text p {
+    font-size: 18px;
+  }  
+  @media (max-width: 991px) {
+    .about-img {
+      margin-top: 30px;
+    }
+  }
+  .theme-color {
+      color: #fe4f6c;
+  }
+  .section {
+      padding: 100px 0;
+      position: relative;
+  }
+
