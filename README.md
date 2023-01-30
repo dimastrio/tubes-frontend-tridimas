@@ -7,4 +7,4 @@ Projek ini adalah tugas besar untuk memenuhi nilai UAS matakuliah Front End Prog
 3. Kelas : S1SE03B
 
 # Demo
-[https://tubesfrontend.vercel.app/](https://tubes-frontend-tridimas.vercel.app/)
+https://tubes-frontend-tridimas.vercel.app/
